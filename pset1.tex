@@ -139,10 +139,24 @@ $\text{int}\mathbb{R\setminus Q} = \emptyset$. Since $\mathbb{R} \not\subset
 \end{figure}
 \end{question}
 \begin{solution}
+\textbf{(a)}
 Let $y \in f(A \cup B)$. Then, there exists $x \in A \cup B$ such that $f(x) = y$. 
 If $x \in A$, then $f(x) = y \in f(A)$. Likewise if $x \in B$, then $f(x) = y \in f(B)$. Hence,
-$y \in f(A) \cup f(B)$. Since $x$ was arbitrary, it follows that $f(A \cup B) \subset 
-f(A) \cup f(B)$.  
+$y \in f(A) \cup f(B)$. Since $y$ was arbitrary, it follows that $f(A \cup B) \subset 
+f(A) \cup f(B)$. Conversely, let $y \in f(A) \cup f(B)$. If $y \in f(A)$, then there 
+exists $x \in A$ such that $f(x) = y$. Since $A \subset (A \cup B)$, it follows that 
+$y \in f(A \cup B)$. By symmetry, if $y \in f(B)$, we have $y \in f(A \cup B)$ as well.
+Since $y$ was arbitrary, we have shown that $f(A) \cup f(B) \subset f(A \cup B)$, which completes
+the proof of $f(A \cup B) = f(A) \cup f(B)$.  
+
+\bigskip
+
+\textbf{(b)} Let $y \in f(A \cap B)$. 
+
+\bigskip
+
+\textbf{(c)}  
+  
 \end{solution}
 
 \pagebreak
