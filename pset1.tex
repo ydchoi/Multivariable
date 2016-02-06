@@ -87,7 +87,7 @@ of Multivariable Analysis 2016 at Courant Institute of Mathematical Sciences.
 \begin{solution}
 \end{solution}
 
-\bigskip
+\newpage
 
 \begin{question}[2]
 \hfill
@@ -118,7 +118,7 @@ $\text{int}\mathbb{R\setminus Q} = \emptyset$. Since $\mathbb{R} \not\subset
  
 \end{solution}
 
-\bigskip
+\newpage
 
 \begin{question}[3]
 \hfill
@@ -129,7 +129,8 @@ $\text{int}\mathbb{R\setminus Q} = \emptyset$. Since $\mathbb{R} \not\subset
 \end{question}
 \begin{solution}
 \end{solution}
-\bigskip
+
+\newpage
 
 \begin{question}[4]
 \hfill
@@ -139,27 +140,43 @@ $\text{int}\mathbb{R\setminus Q} = \emptyset$. Since $\mathbb{R} \not\subset
 \end{figure}
 \end{question}
 \begin{solution}
+We first establish a trivial, yet central lemma: if $A \subset B$, then $f(A) \subset f(B)$.
+We proceed with a short proof of it for sake of completeness.  
+Let $y \in f(A)$. Then, there exists $x \in A$ such that $f(x) = y$. As $A \subset B$, 
+we have $x \in B$, and $f(x) = y \in f(B)$. hence, the lemma is true.
+
 \textbf{(a)}
-Let $y \in f(A \cup B)$. Then, there exists $x \in A \cup B$ such that $f(x) = y$. 
+Firstly, by the lemma, we have that $f(A) \subset f(A \cup B)$ and $f(B) \subset f(A \cup B)$.
+It follows that $f(A) \cup f(B) \subset f(A \cup B)$. Conversely, 
+let $y \in f(A \cup B)$. Then, there exists $x \in A \cup B$ such that $f(x) = y$. 
 If $x \in A$, then $f(x) = y \in f(A)$. Likewise if $x \in B$, then $f(x) = y \in f(B)$. Hence,
 $y \in f(A) \cup f(B)$. Since $y$ was arbitrary, it follows that $f(A \cup B) \subset 
-f(A) \cup f(B)$. Conversely, let $y \in f(A) \cup f(B)$. If $y \in f(A)$, then there 
-exists $x \in A$ such that $f(x) = y$. Since $A \subset (A \cup B)$, it follows that 
-$y \in f(A \cup B)$. By symmetry, if $y \in f(B)$, we have $y \in f(A \cup B)$ as well.
-Since $y$ was arbitrary, we have shown that $f(A) \cup f(B) \subset f(A \cup B)$, which completes
+f(A) \cup f(B)$. 
+This completes
 the proof of $f(A \cup B) = f(A) \cup f(B)$.  
 
 \bigskip
 
-\textbf{(b)} Let $y \in f(A \cap B)$. 
+\textbf{(b)} By the lemma, we have
+\eQb
+f(A \cap B) \subset f(A) \> \> \text{ and } \> \> f(A \cap B) \subset f(B).
+\eQe 
+It follows that $f(A \cap B) \subset f(A) \cap f(B)$. 
 
 \bigskip
 
-\textbf{(c)}  
+\textbf{(c)} With the additional assumption of injectivity, we wish to establish 
+$f(A) \cap f(B) \subset  f(A \cap B)$. This will suffice, as we have established the reverse
+inclusion for a general function in part $(b)$. Let $y \in f(A) \cap f(B)$. Then, by the
+injectivity of $f$, there exists a unique $x \in S$ such that $f(x) = y$. As $y \in f(A)$ and
+$y \in f(B)$, it follows that $x \in A \cap B$. Hence, $f(x) = y \in f(A \cap B)$. We have shown 
+that if $f$ is injective, we have $f(A \cap B)  = f(A) \cap f(B)$.
+\hfill $\qed$ 
+   
   
 \end{solution}
 
-\pagebreak
+\newpage
 
 \begin{question}[5]
 \hfill
