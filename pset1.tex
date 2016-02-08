@@ -185,6 +185,7 @@ It follows that
 (t_2 a_2 + (1-t_2)b_2),
 \eQe
 for some $a_1, a_2 \in A$, $b_1, b_2 \in B$, and $t_1, t_2 \in [0,1]$. 
+
 \end{solution}
 
 \newpage
@@ -265,7 +266,18 @@ But, by the lemma, whenever $0 < |x - x_0| < \delta$, we have
 \eQb
 ||f(x)| - |y_0|| &\leq& |f(x) - y_0| < \epsilon.
 \eQe 
-Since $\epsilon$ was arbitrary, we have shown that $|y_0| = \lim_{x \to x_0} |f(x)|$.
+Since $\epsilon > 0$ was arbitrary, we have shown that $|y_0| = \lim_{x \to x_0} |f(x)|$.
+
+\bigskip
+
+Now assume that $0 = \lim_{x \to x_0} |f(x)|$. Then, by definition, for every $\epsilon > 0$,
+there exists $\delta > 0$ such that $||f(x)| - 0| < \epsilon$ whenever $0 < |x - x_0| < \delta$.
+The above implies that for every $\epsilon > 0$, there exists $\delta > 0$ such that $|f(x)| < 
+\epsilon$ whenever $0 < |x - x_0| < \delta$. This is precisely, $y_0 = 0 = \lim_{x \to x_0}
+f(x)$. Hence, we are done.
+
+\hfill $\qed$
+ 
  
 \end{solution}
 
