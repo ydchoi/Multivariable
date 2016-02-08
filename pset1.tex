@@ -40,7 +40,7 @@
 \newtheorem*{remark}{Remark}
 \usepackage{verbatimbox}
 \usepackage{listings}
-\title{Linear Algebra II: \\
+\title{Multivariable Analysis:  \\
 Problem Set I}
 
 
@@ -85,6 +85,33 @@ of Multivariable Analysis 2016 at Courant Institute of Mathematical Sciences.
 \end{figure}
 \end{question}
 \begin{solution}
+\textbf{(a)} Let $K = \{ x : \sum_{i=1}^{n} |x_i| \leq 1\}$, $a,b \in K$, and 
+$t \in [0,1]$. Consider $l = ta + (1-t)b$ and its $l_1$ quantity, $\sum_{i=1}^{n}
+|ta_i + (1-t)b_i|$. By the triangle inequality, it follows that
+\eQb
+\sum_{i=1}^{n} |ta_i + (1-t)b_i| &\leq& \sum_{i=1}^{n} |ta_i| + |(1-t)b_i| \\
+&=& |t|\sum_{i=1}^{n} |a_i| + |1-t|\sum_{i=1}^{n} |b_i| \\
+&\leq& |t| + |1-t| = 1.
+\eQe 
+Hence, $l \in K$.
+Since $x,y,t$ were arbitrary, we have shown that $K$ is convex. 
+
+\bigskip
+
+\textbf{(b)} Let $K = \{ x = \sum_{i=1}^{n} c_i v_i | \>\> 0 \leq c_i \leq 1 
+\>\> \text{for} \>\> i = 1,2,...,n \}$, $a = \sum_{i=1}^{n} a_i v_i
+, b = \sum_{i=1}^{n} b_i v_i  \in K$, and $t \in [0,1]$. Consider 
+$l = ta + (1-t)b$. It follows that
+\eQb
+ta + (1-t)b &=& t\sum_{i=1}^{n} a_i v_i + (1-t) \sum_{i=1}^{n} v_i \\
+&=& \sum_{i=1}^{n} (ta_i + (1-t)b_i) v_i.
+\eQe 
+As $t,a_i,b_i, 1-t$ are all non-negative, we have $0 \leq ta_i + (1-t)b_i$.
+As $0 \leq a_i, b_i \leq 1$, we obtain $ta_i + (1-t)b_i \leq t + 1-t = 1$, which 
+combined with the previous inequality gives $0 \leq ta_i + (1-t)b_i \leq 1$.
+Hence, $l \in K$. Since $x,y,t$ were arbitrary, we have shown that $K$ is convex. 
+
+\hfill $\qed$
 \end{solution}
 
 \newpage
@@ -114,7 +141,29 @@ $\text{int}\mathbb{R\setminus Q} = \emptyset$. Since $\mathbb{R} \not\subset
 \bigskip
 
 \textbf{(b)}
-
+Firstly, taking complements on both sides shows that the given inclusion is equivalent to
+\eQb
+(\text{cl}A \cap \text{cl}B)^c &\subset&
+(\text{cl}(A \cap B))^c. 
+\eQe
+By DeMorgan's laws, we have that the above inclusion is equivalent to 
+\eQb
+(\text{cl}A)^c \cup (\text{cl}B)^c &\subset& (\text{cl} (A \cap B))^c.  
+\eQe
+Using the fact that $(\text{cl}A)^c = \text{int}(A^c)$, for any arbitrary
+set $A \subset E^n$, the above inclusion is equivalent to
+\eQb
+\text{int} A^c \cup \text{int} B^c &\subset& \text{int}((A \cap B)^c).
+\eQe
+Again, by DeMorgan's laws, the above inclusion is equivalent to 
+\eQb
+\text{int} A^c \cup \text{int} B^c &\subset& \text{int}(A^c \cup B^c).
+\eQe
+As we have shown the part $(a)$ to be true, we are done. We now show that the equality 
+does not hold, by providing a counter example. Let $A = \mathbb{Q}$, $B=\mathbb{R} \setminus
+\mathbb{Q}$. Then, $\text{cl}(A \cap B) = \emptyset$ and $\text{cl}(A) \cap \text{cl}(B) = 
+\mathbb{R}$. Since $\mathbb{R} \not\subset \emptyset$, we have shown that the equality 
+does not hold. \hfill $\qed$ 
  
 \end{solution}
 
@@ -128,6 +177,14 @@ $\text{int}\mathbb{R\setminus Q} = \emptyset$. Since $\mathbb{R} \not\subset
 \end{figure}
 \end{question}
 \begin{solution}
+Let $\text{join}(A,B)$ be the join of $A$ and $B$, $\lambda \in [0,1]$,
+and $x_1, x_2 \in \text{join}(A,B)$. Consider $\lambda x_1 + (1-\lambda)x_2$.
+It follows that
+\eQb
+\lambda x_1 + (1-\lambda)x_2 &=& \lambda (t_1 a_1 + (1-t_1)b_1) + (1-\lambda)
+(t_2 a_2 + (1-t_2)b_2),
+\eQe
+for some $a_1, a_2 \in A$, $b_1, b_2 \in B$, and $t_1, t_2 \in [0,1]$. 
 \end{solution}
 
 \newpage
@@ -186,10 +243,32 @@ that if $f$ is injective, we have $f(A \cap B)  = f(A) \cap f(B)$.
 \end{figure}
 \end{question}
 \begin{solution} 
+Before proceeding to the main part of the proof, we prove the following lemma, which
+is a mere consequence of the triangle inequality: Let 
+$x,y \in E^n$. Then, $||x|-|y|| < |x - y|$. The proof is as follows: Let $x,y \in E^n$.
+Then, by the triangle inequality, we obtain
+\eQb
+|x| &=& |x - y + y| \\
+&\leq& |x - y| + |y|. 
+\eQe
+By subtracting both sides with $|y|$, we have $|x| - |y| \leq |x - y|$. By symmetry, we further 
+obtain $|y| - |x| \leq |x-y|$, thereby showing that $||x| -|y|| < |x - y|$ as required.
 
+\bigskip 
+
+We now proceed with the main part of the proof.
+Assume that $y_0 = \lim_{x \to x_0} f(x)$. Then, by definition, for every $\epsilon > 0$,
+there exists $\delta > 0$ such that $|f(x) - y_0| < \epsilon$ whenever $0 < |x - x_0| < \delta$.
+Fix $\epsilon > 0$. Let $\delta > 0$ be chosen such that
+$|f(x) - y_0| < \epsilon$ whenever $0 < |x - x_0 | < \delta$, which exists by the assumption.
+But, by the lemma, whenever $0 < |x - x_0| < \delta$, we have
+\eQb
+||f(x)| - |y_0|| &\leq& |f(x) - y_0| < \epsilon.
+\eQe 
+Since $\epsilon$ was arbitrary, we have shown that $|y_0| = \lim_{x \to x_0} |f(x)|$.
  
 \end{solution}
 
-\pagebreak
+\newpage
 
 \end{document}
