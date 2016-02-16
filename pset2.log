@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 FEB 2016 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 FEB 2016 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,79 +550,89 @@ Package pdftex.def Info: MA-2-23-8.png used on input line 84.
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./MA-2-
 23-8.png>]
-<MA-2-24-6.png, id=16, 459.7175pt x 122.4575pt>
+<MA-2-24-6.png, id=22, 459.7175pt x 122.4575pt>
 File: MA-2-24-6.png Graphic file (type png)
  <use MA-2-24-6.png>
-Package pdftex.def Info: MA-2-24-6.png used on input line 96.
+Package pdftex.def Info: MA-2-24-6.png used on input line 116.
 (pdftex.def)             Requested size: 397.48499pt x 105.88689pt.
- [2 <./MA-2-24-6.png>] <MA-2-25-8.png, id=23, 451.6875pt x 127.47626pt>
+ [2 <./MA-2-24-6.png>] <MA-2-25-8.png, id=30, 451.6875pt x 127.47626pt>
 File: MA-2-25-8.png Graphic file (type png)
 
 <use MA-2-25-8.png>
-Package pdftex.def Info: MA-2-25-8.png used on input line 108.
+Package pdftex.def Info: MA-2-25-8.png used on input line 153.
 (pdftex.def)             Requested size: 397.48499pt x 112.18527pt.
  [3 <./MA-2-25-8.png>]
-<MA-2-26-6.png, id=30, 437.635pt x 89.33376pt>
+<MA-2-26-6.png, id=40, 437.635pt x 89.33376pt>
 File: MA-2-26-6.png Graphic file (type png)
  <use MA-2-26-6.png>
-Package pdftex.def Info: MA-2-26-6.png used on input line 121.
+Package pdftex.def Info: MA-2-26-6.png used on input line 208.
 (pdftex.def)             Requested size: 397.48499pt x 81.13843pt.
- [4 <./MA-2-26-6.png>] <MA-2-27-12.png, id=37, 456.70625pt x 82.3075pt>
+ [4 <./MA-2-26-6.png>] <MA-2-27-12.png, id=47, 456.70625pt x 82.3075pt>
 File: MA-2-27-12.png Graphic file (type png)
 
 <use MA-2-27-12.png>
-Package pdftex.def Info: MA-2-27-12.png used on input line 134.
+Package pdftex.def Info: MA-2-27-12.png used on input line 265.
 (pdftex.def)             Requested size: 397.48499pt x 71.63707pt.
  [5 <./MA-2-27-12.png>]
-<MA-2-28-5.png, id=44, 441.65pt x 71.26625pt>
+<MA-2-28-5.png, id=54, 441.65pt x 71.26625pt>
 File: MA-2-28-5.png Graphic file (type png)
  <use MA-2-28-5.png>
-Package pdftex.def Info: MA-2-28-5.png used on input line 148.
+Package pdftex.def Info: MA-2-28-5.png used on input line 279.
 (pdftex.def)             Requested size: 397.48499pt x 64.14227pt.
- [6 <./MA-2-28-5.png>] <MA-2-29-7.png, id=51, 453.695pt x 136.51pt>
+ [6 <./MA-2-28-5.png>] <MA-2-29-7.png, id=61, 453.695pt x 136.51pt>
 File: MA-2-29-7.png Graphic file (type png)
  <use MA-2-29-7.png>
-Package pdftex.def Info: MA-2-29-7.png used on input line 161.
+Package pdftex.def Info: MA-2-29-7.png used on input line 296.
 (pdftex.def)             Requested size: 397.48499pt x 119.598pt.
 
-[7 <./MA-2-29-7.png>] <MA-2-210-4.png, id=59, 446.66875pt x 30.1125pt>
+[7 <./MA-2-29-7.png>] <MA-2-210-4.png, id=69, 446.66875pt x 30.1125pt>
 File: MA-2-210-4.png Graphic file (type png)
 
 <use MA-2-210-4.png>
-Package pdftex.def Info: MA-2-210-4.png used on input line 174.
+Package pdftex.def Info: MA-2-210-4.png used on input line 374.
 (pdftex.def)             Requested size: 397.48499pt x 26.79726pt.
  [8 <./MA-2-210-4.png>]
-<MA-2-211-5.png, id=66, 447.6725pt x 203.76125pt>
+<MA-2-211-5.png, id=76, 447.6725pt x 203.76125pt>
 File: MA-2-211-5.png Graphic file (type png)
  <use MA-2-211-5.png>
-Package pdftex.def Info: MA-2-211-5.png used on input line 187.
+Package pdftex.def Info: MA-2-211-5.png used on input line 410.
 (pdftex.def)             Requested size: 397.48499pt x 180.92409pt.
  [9 <./MA-2-211-5.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 420.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 420.
  (./pset2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 420.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 420.
 Package rerunfilecheck Info: File `pset2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 420.
  ) 
 Here is how much of TeX's memory you used:
- 10258 strings out of 493089
- 152830 string characters out of 6134842
- 245640 words of memory out of 5000000
- 13571 multiletter control sequences out of 15000+600000
- 13882 words of font info for 35 fonts, out of 8000000 for 9000
+ 10261 strings out of 493089
+ 152859 string characters out of 6134842
+ 251640 words of memory out of 5000000
+ 13572 multiletter control sequences out of 15000+600000
+ 15566 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,8n,39p,251b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,39p,251b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on pset2.pdf (9 pages, 480815 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on pset2.pdf (9 pages, 587152 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 132 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  19 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
