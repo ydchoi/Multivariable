@@ -117,6 +117,7 @@ drawn from a Euclidean space, we have shown that it is convergent.
 \end{figure}
 \end{question}
 \begin{solution}
+Correction: Drop the boundedness assumption from sequentially compact definition.
 \textbf{(a)}
 Let $\{ x^k \}$ be a bounded sequence in $E^n$. It follows that the sequences formed
 by each component are bounded as well, as otherwise it would contradict the boundedness
@@ -139,8 +140,28 @@ a bounded sequence in $E^n$ has a convergent subsequence. \\
  
 \bigskip
 
-\textbf{(b)}
+\textbf{(b)} Assume that $S$ is closed and bounded.
+Let $\{ x_m \}$ be a bounded sequence from $S$. Since $S$ is bounded, by $(a)$, there exists
+a convergent subsequence $\{x_{m_k} \}$. Now, observe that $\{ x_{m_k}\}$ is a sequence in $S$,
+and by the closedness of $S$, we have that the limit of $\{x_{m_k}\}$ is in $S$. Hence, we have
+shown that there exists a convergent subsequence that converges to a point in $S$. $S$ is sequentially
+compact. 
 
+\smallskip
+
+Assume that $S$ is sequentially compact. Let $\{ x_m \}$ be a sequence from $S$ such that $x_m \to
+x$ as $m \to \infty$. Fix $\epsilon > 0$. Then, there exists an $N$ such that $|x_m - x| < \epsilon$
+for $m \geq N$. Consider $\{x_m \}_{m \geq N}$. This is a bounded sequence in $S$, and it is also
+a subsequence of $\{x_m\}$, whose limit is $x$, as any subsequence of a convergent sequence 
+converges to the limit of the original sequence. By the sequential compactness assumption, we have that
+$x \in S$. Since the sequence that was considered was arbitrary, we have shown that $S$ is closed. Now,
+suppose for sake of contradiction that $S$ is not bounded. Then, there exists a sequence $\{x_m \}$
+such that $|x_m| \geq m$. Observe that every subsequence of this sequence is not Cauchy, hence
+not convergent. Therefore, it is a contradiction to the sequential compactness. Hence, $S$
+is bounded.
+
+\hfill $\qed$
+ 
 
 \end{solution}
 
@@ -279,12 +300,32 @@ reached a contradiction and $f$ must be a constant function.
     \includegraphics[width=1\textwidth]{MA-2-28-5.png}
 \end{figure}
 \end{question}
-\begin{solution} 
-\textbf{(a)} Assume $A$ is closed, $B$ is compact, and $A \cap B = \emptyset$.  
+\begin{solution} \hfill \\ 
+\textbf{(a)} Suppose for sake of contradiction that $d(A,B) = 0$. As $d(A,B) = 0$, we can choose
+a sequence of $\{(a_n,b_n)\}_{n=1}^{\infty}$ such that $\lim_{n \to \infty} |a_n - b_n| = 0$,
+by using the approximation property of infimum.  
+As $B$ is compact, there exists a subsequence $\{b_{n_k} \}$ such that it converges to some $b$ 
+in $B$. We claim that the corresponding subsequence $\{a_{n_k} \}$ converges to $b$. Fix $\epsilon > 0$.
+Then, there exists $K_1$ such that $|b - b_{n_k}| < \dfrac{\epsilon}{2}$ for $k \geq K_1$. Furthermore, 
+there exists $K_2$ such that $|a_{n_k} - b_{n_k}| < \dfrac{\epsilon}{2}$ for $k \geq K_2$. 
+Let $K = \max(K_1, K_2)$.
+It follows that 
+\eQb
+|a_{n_k} - b| &=& |a_{n_k} - b_{n_k} + b_{n_k} - b| \\
+&\leq& |a_{n_k} - b_{n_k}| + |b_{n_k} - b| < \epsilon,
+\eQe
+for $k \geq K$. Hence, we have shown that $a_n \to b$ as $n \to \infty$. Since $A$ is closed, 
+we have that $b \in A$ and this is a contradiction with $A \cap B = \emptyset$. Therefore,
+we have that $d(A,B) = 0$. 
 
 \bigskip
 
 \textbf{(b)}
+Let $A = \mathbb{N}$ and $B = \{ n + \dfrac{1}{n} \> | \> n \in \mathbb{N} \}$. Observe that
+both sets are closed, and $A \cap B = \emptyset$, but $d(A,B) = 0$, as for any $\epsilon > 0$,
+by Archemedian property of the real, there is a large enough $n$, where $\dfrac{1}{n} < \epsilon$.
+
+\hfill $\qed$
  
 \end{solution}
 \newpage
@@ -382,25 +423,33 @@ The absolute convergence of the series can be shown through a comparison
 test with $\sum_{k=1}^{\infty} \dfrac{1}{k^2}$. 
 Now, we denote the $n$th partial sum function as $f_n$. Observe that $\{ f_n \}$ 
 forms a sequence of continuous functions, as $\sin(kx)/k^2$ is continuous 
-for all $k \in \mathbb{N}$ and a sum of two continuous function is continuous. 
-By Theorem $2.11$, it suffices to show that $\{f_n \}$ converges uniformly to 
-$f = \sum_{k=1}^{\infty} \dfrac{\sin(kx)}{k^2}$, i.e. $||f - f_n|| \to 0$ in 
-the sup-norm. As we have shown that the space of continuous functions 
-with respect to sup-norm is complete, it again suffices to show that 
-the partial sums as a sequence form a Cauchy sequence.
+for all $k \in \mathbb{N}$ and a sum of two continuous function is continuous.
+Furthermore, observe that $f_n \in \mathbb{B}(E)$ for all $n$, as $|\sum_{k=1}^{n} 
+\dfrac{\sin(kx)}{k^2}| \leq \sum_{k=1}^{n} \dfrac{1}{k^2} <\infty$ for all 
+$x \in E$. Since $B(E)$ forms a complete metric space with respect to the supnorm,
+showing that $\{f_n \}$ is Cauchy in supnorm will give us that $\{ f_n \}$ convergent
+in supnorm, which then gives uniform convergence of $\{f_n\}$.
 
 \bigskip
 
-Fix $\epsilon > 0$. Observe that
+Fix $\epsilon > 0$. Now, since $\sum_{k=1}^{\infty}\dfrac{1}{k^2}$ is convergnt, 
+there exists an index $N$ such that for all $n \geq m \geq N$, we have
+$\sum_{k=m}^{n} \dfrac{1}{k^2} < \epsilon$. Observe that, for $n \geq m \geq N$,
 \eQb
 |f_n - f_m | &=& \left| \sum_{k=1}^{n} \dfrac{\sin(kx)}{k^2} - 
 \sum_{k=1}^{m} \dfrac{\sin(kx)}{k^2} \right| \\
 &=& \left| \sum_{k=m}^{n} \dfrac{\sin(k)}{k^2} \right| \\
 &\leq& \sum_{k=m}^{n} \left| \dfrac{\sin(k)}{k^2} \right| \\
-&\leq& \sum_{k=m}^{n} \dfrac{1}{k^2} \\ 
+&\leq& \sum_{k=m}^{n} \dfrac{1}{k^2} < \epsilon. \\ 
 \eQe 
-$n \leq m $.
+Since $\epsilon > 0$ was arbitrary, we have shown that $\{f_n \}$ is Cauchy in $\mathbb{B}(E)$,
+with respect to the supnorm, hence $\sum_{k=1}^{\infty}\dfrac{\sin(kx)}{x^2}$ is a uniform limit
+of a series of continuous function on $E$.
+ By Theorem 2.11, we have that $f$ is continuous on $E$
+ as required.
+\hfill $\qed$
 \end{solution}
+
 \newpage
 
 \begin{question}[9]
@@ -411,7 +460,43 @@ $n \leq m $.
 \end{figure}
 \end{question}
 \begin{solution} 
- 
+\textbf{(a)}
+
+\bigskip
+
+\textbf{(b)}
+
+\bigskip
+
+\textbf{(c)}
+We first show that $f(x,y,z)$ is a semi-norm. Let $(x,y,z) \in E^3$, and $c \in E$. It follows that
+$0 \leq |x| + 2|y| = f(x,y,z)$ and $f(cx,cy,cz) = |cx| + 2|cy| = |c||x| + 2|c||y| = |c|f(x,y,z)$. 
+Now, let $a = (x_1,y_1,z_1)$ and $b = (x_2, y_2, z_2)$ in $E^3$. It follows that 
+\eQb
+f(a+b) &=& |x_1 + x_2| + 2|y_1 + y_2| \\
+&\leq& |x_1| + |x_2| + 2|y_1| + 2|y_2| = f(a) + f(b). 
+\eQe 
+Therefore, we have shown that $f$ is a semi-norm.
+We plot the figure below. 
+\begin{figure} [h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{multi-plot1}
+  \caption{3D-figure}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{multi-plot2}
+  \caption{Contours}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{Plot of $f(x,y,z) = |x| + 2|y|$}
+\label{fig:test}
+\end{figure}
+\hfill \\
+\hfill $\qed$ 
  
 \end{solution}
 

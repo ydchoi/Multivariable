@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 FEB 2016 09:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 FEB 2016 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -555,66 +555,78 @@ File: MA-2-24-6.png Graphic file (type png)
  <use MA-2-24-6.png>
 Package pdftex.def Info: MA-2-24-6.png used on input line 116.
 (pdftex.def)             Requested size: 397.48499pt x 105.88689pt.
- [2 <./MA-2-24-6.png>] <MA-2-25-8.png, id=30, 451.6875pt x 127.47626pt>
+ [2 <./MA-2-24-6.png>] <MA-2-25-8.png, id=31, 451.6875pt x 127.47626pt>
 File: MA-2-25-8.png Graphic file (type png)
 
 <use MA-2-25-8.png>
-Package pdftex.def Info: MA-2-25-8.png used on input line 153.
+Package pdftex.def Info: MA-2-25-8.png used on input line 174.
 (pdftex.def)             Requested size: 397.48499pt x 112.18527pt.
  [3 <./MA-2-25-8.png>]
 <MA-2-26-6.png, id=40, 437.635pt x 89.33376pt>
 File: MA-2-26-6.png Graphic file (type png)
  <use MA-2-26-6.png>
-Package pdftex.def Info: MA-2-26-6.png used on input line 208.
+Package pdftex.def Info: MA-2-26-6.png used on input line 229.
 (pdftex.def)             Requested size: 397.48499pt x 81.13843pt.
  [4 <./MA-2-26-6.png>] <MA-2-27-12.png, id=47, 456.70625pt x 82.3075pt>
 File: MA-2-27-12.png Graphic file (type png)
 
 <use MA-2-27-12.png>
-Package pdftex.def Info: MA-2-27-12.png used on input line 265.
+Package pdftex.def Info: MA-2-27-12.png used on input line 286.
 (pdftex.def)             Requested size: 397.48499pt x 71.63707pt.
  [5 <./MA-2-27-12.png>]
 <MA-2-28-5.png, id=54, 441.65pt x 71.26625pt>
 File: MA-2-28-5.png Graphic file (type png)
  <use MA-2-28-5.png>
-Package pdftex.def Info: MA-2-28-5.png used on input line 279.
+Package pdftex.def Info: MA-2-28-5.png used on input line 300.
 (pdftex.def)             Requested size: 397.48499pt x 64.14227pt.
  [6 <./MA-2-28-5.png>] <MA-2-29-7.png, id=61, 453.695pt x 136.51pt>
 File: MA-2-29-7.png Graphic file (type png)
  <use MA-2-29-7.png>
-Package pdftex.def Info: MA-2-29-7.png used on input line 296.
+Package pdftex.def Info: MA-2-29-7.png used on input line 337.
 (pdftex.def)             Requested size: 397.48499pt x 119.598pt.
 
 [7 <./MA-2-29-7.png>] <MA-2-210-4.png, id=69, 446.66875pt x 30.1125pt>
 File: MA-2-210-4.png Graphic file (type png)
 
 <use MA-2-210-4.png>
-Package pdftex.def Info: MA-2-210-4.png used on input line 374.
+Package pdftex.def Info: MA-2-210-4.png used on input line 415.
 (pdftex.def)             Requested size: 397.48499pt x 26.79726pt.
  [8 <./MA-2-210-4.png>]
 <MA-2-211-5.png, id=76, 447.6725pt x 203.76125pt>
 File: MA-2-211-5.png Graphic file (type png)
  <use MA-2-211-5.png>
-Package pdftex.def Info: MA-2-211-5.png used on input line 410.
+Package pdftex.def Info: MA-2-211-5.png used on input line 459.
 (pdftex.def)             Requested size: 397.48499pt x 180.92409pt.
- [9 <./MA-2-211-5.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 420.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 420.
+
+<multi-plot1.png, id=77, 310.15875pt x 370.38374pt>
+File: multi-plot1.png Graphic file (type png)
+ <use multi-plot1.png>
+Package pdftex.def Info: multi-plot1.png used on input line 485.
+(pdftex.def)             Requested size: 119.2467pt x 142.39754pt.
+
+<multi-plot2.png, id=78, 397.485pt x 349.305pt>
+File: multi-plot2.png Graphic file (type png)
+ <use multi-plot2.png>
+Package pdftex.def Info: multi-plot2.png used on input line 491.
+(pdftex.def)             Requested size: 119.2467pt x 104.7923pt.
+ [9 <./MA-2-211-5.png> <./multi-plot1.png> <./multi-plot2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 505.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 505.
  (./pset2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 420.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 420.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 505.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 505.
 Package rerunfilecheck Info: File `pset2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 420.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 505.
  ) 
 Here is how much of TeX's memory you used:
- 10261 strings out of 493089
- 152859 string characters out of 6134842
- 251640 words of memory out of 5000000
- 13572 multiletter control sequences out of 15000+600000
- 15566 words of font info for 37 fonts, out of 8000000 for 9000
+ 10287 strings out of 493089
+ 153286 string characters out of 6134842
+ 251867 words of memory out of 5000000
+ 13594 multiletter control sequences out of 15000+600000
+ 17151 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,39p,251b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,39p,251b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -629,10 +641,10 @@ xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
 dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on pset2.pdf (9 pages, 587152 bytes).
+Output written on pset2.pdf (9 pages, 824330 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
