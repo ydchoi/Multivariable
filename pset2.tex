@@ -287,7 +287,39 @@ reached a contradiction and $f$ must be a constant function.
 \end{figure}
 \end{question}
 \begin{solution} 
- 
+\textbf{(a)} 
+We show that $S^c$ is open, which is equivalent to $S$ being closed. Let $(x,y) \in S^c$. If 
+$x < 0$, we can take the ball of radius of $\dfrac{|x}{2}$, which is disjoint from $S$. 
+If $|y| > 1$, we can take the ball of raidus $\dfrac{|y|-1}{2}$, which is disjoint from $S$. 
+Now, for $x > 0; |y| \leq 1$, consider the horizontal distance to the nearest $\sin(x)$ curve.
+Since $\sin(1/x)$ is periodic and yields value from $-1$ to $1$ such distanceis well-defined,
+denote this by $h_x$  
+Now, simply take the vertical distance to the graph $|x - \sin(\dfrac{1}{x})|$, which we call $h_y$.
+Take $\delta = \min(h_x, h_y)$, we have that the ball is disjoint from the graph. Hence,
+we have shown that $S^c$ is open and $S$ is closed.
+
+\bigskip
+
+\textbf{(b)}
+Let $x \in S_2$.
+Assume that $(0,0)$ and $x$ are path-connected. Then, there has to exists a continuous function
+on $[0,x]$. However, this is a contradiction, because, we can have 
+$\{a_n \} = \dfrac{1}{2k\pi 
++ 1\dfrac{\pi}{2}}$ 
+and 
+$\{b_n \} = \dfrac{1}{2k\pi 
++ 3\dfrac{\pi}{2}}$, and those converge to $(0,1)$ and $(0,-1)$, which breaks the sequential 
+characterization of continuity. Hence, there is no point in $S$ joining $(0,0)$ and any point
+of $S_2$. 
+
+\bigskip
+
+\textbf{(c)}
+Suppose that there exists two nonempty open sets $A$ and $B$ in $S$ such that $A \cap B = \emptyset$
+and $S = A \cup B$. Since $S = A \cup B$, it follows that $\delta A \cap B = \emptyset$.
+However, $S$ is closed by $(a)$. Therefore, we have that $\delta A \cap S \neq \emptyset$. Therefore,
+this is a contradiction and $S$ is connected.  
+\hfill $\qed$
  
 \end{solution}
 
@@ -461,12 +493,23 @@ of a series of continuous function on $E$.
 \end{question}
 \begin{solution} 
 \textbf{(a)}
+Let $\{e_1,...,e_n\}$. Since $(fx+y) \leq f(x) + f(y)$, we have $\dfrac{f(x)}{n} \leq \max(f(e_1),
+...,f(e_n))|x|_{\infty}$ Thus, we have shown that $f$ is continuous. It follows that
+for any $x,y \in K$, we have $f(tx + (1-t)y) \leq |t|f(x) + |1-t|f(y) \leq 1$, which gives that
+$K$ is convex. For any $x \in K$ such that $f(x) \leq 1$, $f(-x) = |-1|f(x) = f(x)$. Hence $K$
+is symmetric. When $f$ is not a norm, we hae that there exists a non-zero vector $x$ such that
+$f(x) = 0$. As a scalar multiple of $x$ is always $0$, $K$ is not compcat.
+If it is a norm, it induces a metric. Being closed and bouded implies compact.   
 
 \bigskip
 
 \textbf{(b)}
-
-\bigskip
+Positivity is obvious. For any $x$, if $x \in K$, it follows that $f(x) = 0 = |c|f(x)$.
+When $x \not\in K$, we have $f(x) = \dfrac{1}{\max} = \dfrac{1}{\frac{1}{|k|}\max} = |c|f(x)$.
+Now, let $x,y$ be any two points. Take $c_x = \max\{ c: cx \in K\}$ and $c_y$ for $y$. By convexity,
+it follows that $f(x+y) = \dfrac{1}{\max} \leq \dfrac{a+b}{ab} = f(x) + f(y)$.
+ 
+\newpage
 
 \textbf{(c)}
 We first show that $f(x,y,z)$ is a semi-norm. Let $(x,y,z) \in E^3$, and $c \in E$. It follows that
